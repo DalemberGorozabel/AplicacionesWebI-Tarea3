@@ -1,0 +1,72 @@
+.Hoja-de-vida,
+.Estudios-Realizados,
+.Experiencia-Laboral,
+.Referencias-personales,
+.Capacitaciones{
+    padding: 80px;
+}
+
+.marco{
+    margin-left: 15%;
+    height: 25%;
+    width: 72%;
+    border: 2px solid  green  ;
+    border-radius: 5px;
+    background-color:  white;
+}
+
+.Hoja-de-vida{
+    color: black;
+    background-color: rgba(64, 224, 208, 0.63);
+}
+
+.Estudios-Realizados{
+    background-color: rgba(255, 99, 71, 0.719);
+}
+
+.Experiencia-Laboral{
+    background-color: rgba(238, 130, 238, 0.486);
+}
+
+.Referencias-personales{
+    background-color: rgba(153, 205, 50, 0.698);
+}
+
+.Capacitaciones{
+    background-color: rgba(216, 191, 216, 0.815);
+}
+
+body{
+    margin: 0 auto;
+}
+
+.container {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 0%; 
+    grid-template-rows: 1fr 1fr 1fr; 
+    row-gap: 0%;
+  }
+
+.container,
+.Hoja-de-vida{
+    grid-row: span 3;
+}
+
+.Estudios-Realizados{
+    grid-column: span 2;
+}
+
+.Referencias-personales{
+    grid-column-start: 3;
+    grid-row-end: 4;
+}
+
+.Experiencia-Laboral{
+    grid-column-start: span 2;
+}
+
+.Capacitaciones{
+    grid-column-start: 2;
+    grid-row-end: 4;
+}
